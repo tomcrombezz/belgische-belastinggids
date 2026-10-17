@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f3eb" />
+  <meta name="description" content="Een heldere, interactieve gids voor jongeren die de Belgische personenbelasting en belastingaangifte willen begrijpen." />
+  <title>Belasting in mensentaal — leer de aangifte begrijpen</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Spring naar de inhoud</a>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Belasting in mensentaal, startpagina"><span class="brand-mark">€</span><span>belasting<span class="brand-light">in mensentaal</span></span></a>
+    <nav aria-label="Hoofdnavigatie"><a href="#stappen">De route</a><a href="#wegwijzer">Wegwijzer</a><a href="#catalogus">Aangiftevakken</a><a href="#begrippen">Begrippen</a></nav>
+    <a class="nav-cta" href="#wegwijzer">Vind mijn weg <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> BELGISCHE PERSONENBELASTING · AANSLAGJAAR 2026</p>
+        <h1>Belastingen.<br /><em>Best te begrijpen.</em></h1>
+        <p class="hero-lede">Je eerste studentenjob. Een loonfiche. Een brief van de belastingen. Ontdek stap voor stap wat er gebeurt — zonder moeilijke woorden.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#stappen">Begin bij het begin <span>↓</span></a><a class="text-link" href="#catalogus">Of bekijk alle aangiftevakken <span>→</span></a></div>
+        <div class="hero-note"><span class="note-icon">i</span><span>Een leerwebsite, geen persoonlijke belastingberekening. De regels kunnen elk jaar veranderen.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustratie van een belastingaangifte die stap voor stap wordt ingevuld">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="paper-card"><div class="paper-top"><span>MIJN AANGIFTE</span><span class="paper-dots">•••</span></div><div class="paper-title">Inkomstenjaar<br /><strong>2025</strong></div><div class="paper-line"><span>Inkomsten</span><b>••••</b></div><div class="paper-line"><span>Vooraf betaald</span><b>••••</b></div><div class="paper-stamp">STAP VOOR<br />STAP <span>↗</span></div></div>
+        <div class="float-chip chip-tax"><span>€</span><div><b>Bedrijfs-<br />voorheffing</b><small>al ingehouden</small></div></div>
+        <div class="float-chip chip-check"><span>✓</span><div><b>Alles duidelijk?</b><small>Jij kiest het tempo</small></div></div>
+        <div class="hero-spark">✳</div><div class="hero-caption">Je hoeft geen expert te zijn<br />om het te snappen.</div>
+      </div>
+    </section>
+
+    <section class="route-section" id="stappen"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">EERST HET GROTE PLAATJE</p><h2>Van loon tot belastingbrief.</h2></div><p>De precieze berekening hangt af van je situatie. Maar de grote stappen zijn meestal herkenbaar.</p></div>
+      <div class="route-grid" id="routeGrid"></div>
+      <div class="balance-card"><div class="balance-icon">↔</div><div><b>Wat je al betaalde, wordt vergeleken met wat je verschuldigd bent.</b><span>Betaalde je vooraf meer? Dan krijg je mogelijk terug. Was het minder? Dan kan je moeten bijbetalen.</span></div><div class="balance-example"><span>FICTIEF VOORBEELD</span><b>€ 2.400 − € 2.700</b><strong>€ 300 terug</strong></div></div>
+    </div></section>
+
+    <section class="wayfinder-section" id="wegwijzer"><div class="wrap wayfinder-wrap">
+      <div class="wayfinder-intro"><p class="eyebrow">JOUW SITUATIE, JOUW ROUTE</p><h2>Waar wil je beginnen?</h2><p>Kies wat bij jou past. Je krijgt een paar mogelijke aangifteonderdelen om te verkennen. Deze wegwijzer is educatief: hij bepaalt niet officieel wat jij moet aangeven.</p><div class="step-count"><span id="stepLabel">01</span><i></i><span>06</span><small>jouw wegwijzer</small></div></div>
+      <div class="quiz-card"><div id="quizContent"></div><div class="quiz-footer"><button id="quizBack" class="button button-quiet" type="button" hidden>← Vorige</button><button id="quizNext" class="button button-dark" type="button">Verder <span>→</span></button></div></div>
+    </div></section>
+
+    <section class="catalog-section" id="catalogus"><div class="wrap">
+      <div class="section-heading catalog-heading"><div><p class="eyebrow">DE AANGIFTE VAN DICHTBIJ</p><h2>Een kaart van de aangifte.</h2></div><p>De officiële aangifte heeft twee delen. Deel 1 is voor iedereen; deel 2 is voor bepaalde zelfstandigen, bedrijfsleiders en mensen met specifieke diverse inkomsten.</p></div>
+      <div class="catalog-tools"><div class="segmented" role="group" aria-label="Filter op deel"><button class="active" data-part="all" type="button">Alles <span>22</span></button><button data-part="1" type="button">Deel 1 <span>13</span></button><button data-part="2" type="button">Deel 2 <span>9</span></button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Zoek een vak of onderwerp" aria-label="Zoek een vak of onderwerp" /><kbd>⌘ K</kbd></label></div>
+      <div id="catalogGrid"></div>
+      <p class="catalog-footnote">Deel 1 telt vak I–XIII. Deel 2 is bedoeld voor specifieke situaties en bevat vak XIV–XXII. De gids vat hoofdonderwerpen samen; de officiële toelichting is bepalend. Rubrieken en codes kunnen veranderen.</p>
+    </div></section>
+
+    <section class="concept-section" id="begrippen"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">KLEINE WOORDENBOEK</p><h2>Fiscale taal, vertaald.</h2></div><p>Klik op een begrip voor de korte uitleg, een voorbeeld en de plek waar je het in de aangifte tegenkomt.</p></div>
+      <div class="term-grid" id="termGrid"></div>
+    </div></section>
+
+    <section class="examples-section" id="rekenen"><div class="wrap example-layout"><div><p class="eyebrow">REKEN MEE</p><h2>Terugkrijgen<br />of bijbetalen?</h2><p>De belastingdienst vergelijkt de definitieve belasting met wat al betaald is. Probeer het met zelfgekozen fictieve bedragen.</p><div class="example-callout"><span>✳</span><p>Dit rekent <b>niet</b> je echte belasting uit. Het toont alleen hoe het eindsaldo ontstaat.</p></div></div><div class="calculator-card"><div class="calculator-title"><span class="calc-icon">∑</span><div><b>Het eindsaldo</b><small>Vereenvoudigde uitleg · fictief</small></div><span class="calc-dots">•••</span></div><label>Definitief berekende belasting <div class="euro-input"><span>€</span><input id="taxDue" type="number" min="0" value="2400" aria-label="Definitief berekende belasting" /></div></label><label>Al betaald of ingehouden <div class="euro-input"><span>€</span><input id="taxPaid" type="number" min="0" value="2700" aria-label="Al betaald of ingehouden" /></div></label><div class="calc-result" aria-live="polite"><span id="calcCaption">JE KRIJGT MOGELIJK TERUG</span><b id="calcAmount">€ 300</b><small id="calcEquation">€ 2.700 betaald − € 2.400 belasting</small></div></div></div></section>
+
+    <section class="faq-section"><div class="wrap faq-layout"><div><p class="eyebrow">GOEDE VRAAG</p><h2>Wat jongeren<br />vaak willen weten.</h2></div><div class="faq-list" id="faqList"></div></div></section>
+
+    <section class="sources-section" id="bronnen"><div class="wrap sources-wrap"><div><p class="eyebrow">LEER VAN DE BRON</p><h2>Officieel verder lezen.</h2><p>Deze gids is gecontroleerd aan de hand van de officiële toelichtingen voor aanslagjaar 2026 (inkomsten 2025) en de actuele informatie van de FOD Financiën.</p></div><div class="source-list" id="sourceList"></div></div></section>
+  </main>
+
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark">€</span><span>belasting<span class="brand-light">in mensentaal</span></span></a><p>Gemaakt om te leren. Niet om je aangifte in te vullen.</p><a href="#top">Terug naar boven ↑</a></div><div class="wrap footer-bottom"><span>Educatieve gids · België · Aanslagjaar 2026</span><span>Geen individueel fiscaal advies. Raadpleeg de officiële bronnen voor jouw situatie.</span></div></footer>
+
+  <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle"><button class="dialog-close" type="button" aria-label="Sluiten">×</button><div id="dialogBody"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
