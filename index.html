@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f6f3eb" />
+  <meta name="theme-color" content="#f7f8f5" />
   <meta name="description" content="Een heldere, interactieve gids voor jongeren die de Belgische personenbelasting en belastingaangifte willen begrijpen." />
   <title>Belasting in mensentaal — leer de aangifte begrijpen</title>
   <link rel="stylesheet" href="styles.css" />
@@ -13,7 +13,8 @@
   <a class="skip-link" href="#main">Spring naar de inhoud</a>
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Belasting in mensentaal, startpagina"><span class="brand-mark">€</span><span>belasting<span class="brand-light">in mensentaal</span></span></a>
-    <nav aria-label="Hoofdnavigatie"><a href="#stappen">De route</a><a href="#wegwijzer">Wegwijzer</a><a href="#catalogus">Aangiftevakken</a><a href="#begrippen">Begrippen</a></nav>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="siteNav"><span class="menu-icon" aria-hidden="true">☰</span><span class="sr-only">Menu openen</span></button>
+    <nav id="siteNav" aria-label="Hoofdnavigatie"><a href="#stappen">De route</a><a href="#wegwijzer">Wegwijzer</a><a href="#catalogus">Aangiftevakken</a><a href="#begrippen">Begrippen</a><a href="#bronnen">Bronnen</a></nav>
     <a class="nav-cta" href="#wegwijzer">Vind mijn weg <span aria-hidden="true">↗</span></a>
   </header>
 
@@ -48,7 +49,8 @@
 
     <section class="catalog-section" id="catalogus"><div class="wrap">
       <div class="section-heading catalog-heading"><div><p class="eyebrow">DE AANGIFTE VAN DICHTBIJ</p><h2>Een kaart van de aangifte.</h2></div><p>De officiële aangifte heeft twee delen. Deel 1 is voor iedereen; deel 2 is voor bepaalde zelfstandigen, bedrijfsleiders en mensen met specifieke diverse inkomsten.</p></div>
-      <div class="catalog-tools"><div class="segmented" role="group" aria-label="Filter op deel"><button class="active" data-part="all" type="button">Alles <span>22</span></button><button data-part="1" type="button">Deel 1 <span>13</span></button><button data-part="2" type="button">Deel 2 <span>9</span></button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Zoek een vak of onderwerp" aria-label="Zoek een vak of onderwerp" /><kbd>⌘ K</kbd></label></div>
+      <div class="catalog-tools"><div class="segmented" role="group" aria-label="Filter op deel"><button class="active" data-part="all" type="button" aria-pressed="true">Alles <span>22</span></button><button data-part="1" type="button" aria-pressed="false">Deel 1 <span>13</span></button><button data-part="2" type="button" aria-pressed="false">Deel 2 <span>9</span></button></div><label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Zoek een vak, code of begrip" aria-label="Zoek een vak, code of begrip" aria-controls="catalogGrid" /><kbd>Ctrl K</kbd></label></div>
+      <p class="search-summary" id="searchSummary" role="status" aria-live="polite" aria-atomic="true"></p>
       <div id="catalogGrid"></div>
       <p class="catalog-footnote">Deel 1 telt vak I–XIII. Deel 2 is bedoeld voor specifieke situaties en bevat vak XIV–XXII. De gids vat hoofdonderwerpen samen; de officiële toelichting is bepalend. Rubrieken en codes kunnen veranderen.</p>
     </div></section>
