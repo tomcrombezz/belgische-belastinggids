@@ -202,10 +202,6 @@
   .form-aside { padding:1.25rem; background:#f4f6f1; border-left:3px solid var(--green); border-radius:.3rem .8rem .8rem .3rem; }
   .form-aside b { font-size:.95rem; }
   .form-aside p { margin:.4rem 0 0; font-size:.87rem; }
-  .form-preview { margin-top:.8rem; padding:0 1.25rem; background:#fff; border:1px solid var(--line); border-radius:.8rem; }
-  .form-preview summary { display:flex; justify-content:space-between; padding:1rem 0; cursor:pointer; font-weight:650; }
-  .form-preview[open] summary { border-bottom:1px solid var(--line); }
-  .form-preview iframe { display:block; width:100%; height:min(78vh,58rem); border:0; }
   .form-guide { margin-top:clamp(3rem,7vw,5.5rem); }
   .form-guide-heading { display:flex; justify-content:space-between; align-items:end; gap:2rem; margin-bottom:1.5rem; }
   .form-guide-heading h3 { margin:0; font-size:clamp(1.6rem,3vw,2.3rem); letter-spacing:-.04em; }
@@ -368,8 +364,6 @@
     .hero-caption { bottom: 5%; left: 3%; font-size: .7rem; }
     .route-section, .wayfinder-section, .catalog-section, .concept-section, .examples-section, .faq-section, .sources-section, .form-section { padding-block: 3.5rem; }
     .form-vak-grid { grid-template-columns:1fr; }
-    .form-preview { padding-inline:.8rem; }
-    .form-preview iframe { height:65vh; }
     .form-actions { align-items:flex-start; flex-direction:column; gap:.8rem; }
     .route-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem .9rem; }
     .route-step h3 { font-size: .95rem; }
